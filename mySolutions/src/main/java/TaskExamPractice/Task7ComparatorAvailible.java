@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Comparator;
 
+// TODO написать компаратор,
+//  который сравнивает два инпутстрима по методу available()
+
 public class Task7ComparatorAvailible {
     public static void main(String[] args) {
         try (InputStream is1 = new FileInputStream("Test1.txt");
@@ -20,6 +23,7 @@ public class Task7ComparatorAvailible {
 
     }
 
+    /// ОТВЕТ!!!!
     public static class InputCheck implements Comparator<InputStream> {
         public int compare(InputStream is1, InputStream is2) {
             try {
@@ -29,4 +33,5 @@ public class Task7ComparatorAvailible {
             }
         }
     }
+    /// КОНЕЦ ОТВЕТ!!!!
 }

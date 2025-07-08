@@ -1,7 +1,10 @@
 package TaskExamPractice;
 
+//TODO запустить поток runnable, используя лямбда-выражения
 public class Task8Runnable {
     public static void main(String[] args) {
+
+        /// ОТВЕТ!!!!
         Runnable runnable = new Runnable() {
 
             @Override
@@ -11,5 +14,6 @@ public class Task8Runnable {
         };
 
         runnable.run();
+        /// КОНЕЦ ОТВЕТ!!!!
     }
 }

@@ -5,6 +5,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+
+//TODO 5.Сортировка по кол-ву цифр
+// Компаратор в виде лямбды, работа с ArrayList,
+// строки использовать нельзя. Использовать Collections.sort
+
 public class Task5CompSort {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();

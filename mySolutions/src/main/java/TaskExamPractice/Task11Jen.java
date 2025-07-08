@@ -3,6 +3,7 @@ package TaskExamPractice;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+//TODO создать параметризованный класс, с массивом из обьектов класса параметра
 public class Task11Jen {
     public static void main(String[] args) {
         Integer[] array = {1, 2, 3, 5 ,10};
@@ -11,6 +12,7 @@ public class Task11Jen {
 
     }
 
+    ///ОТВЕТ!!!!
     public static class Jeneric<T> {
         public T[] array;
 
@@ -18,4 +20,5 @@ public class Task11Jen {
             this.array = array;
         }
     }
+    /// КОНЕЦ ОТВЕТ!!!!
 }

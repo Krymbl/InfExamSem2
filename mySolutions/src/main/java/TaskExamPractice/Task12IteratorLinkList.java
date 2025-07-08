@@ -2,6 +2,9 @@ package TaskExamPractice;
 
 import java.util.Iterator;
 
+// TODO  Предложите, как бы мог быть реализован итератор
+//  по односвязному линейному списку,
+//  если реализован только класс его елемента Elem(Node). Приведите код.
 public class Task12IteratorLinkList {
     public static void main(String[] args) {
         Node<Integer> node1 = new Node<>(1);
@@ -30,7 +33,7 @@ public class Task12IteratorLinkList {
             this.value = value;
         }
     }
-    //ОТВЕТ!!!!!!!!!!!!!!!
+    ///ОТВЕТ!!!!!!!!!!!!!!!
     public static class LinkIt implements Iterable<Node> {
         Node currentNode;
 
@@ -56,5 +59,5 @@ public class Task12IteratorLinkList {
             }
         }
     }
-    //КОНЕЦ ОТВЕТ!!!!!!!!!!!!!!!
+    ///КОНЕЦ ОТВЕТ!!!!!!!!!!!!!!!
 }

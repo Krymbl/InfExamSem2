@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+//Компаратор (Comparator) в Java — это интерфейс,
+// который позволяет определить пользовательскую логику сравнения объектов.
+// Он предоставляет способ сравнить два объекта и определить их порядок,
+// что полезно, когда нужно отсортировать коллекции или реализовать
+// пользовательские механизмы сортировки
+
+//TODO Написать компоратор
 
 public class Task4Comparator {
     public static void main(String[] args) {

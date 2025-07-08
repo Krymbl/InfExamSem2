@@ -3,6 +3,8 @@ package TaskExamPractice;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+//TODO Напишите метод, который получает класс C
+// и вызывает у него все методы, которые содержат в названии подстроку f.
 public class Task6Method {
     public static void main(String[] args) {
         try {
@@ -13,6 +15,7 @@ public class Task6Method {
 
     }
 
+    /// ОТВЕТ!!!!
     public static void methodAction(Class clazz, String f) throws Exception {
         Method[] methods = clazz.getMethods();
         Object object = clazz.getConstructor().newInstance();
@@ -24,4 +27,5 @@ public class Task6Method {
             }
         }
     }
+    /// КОНЕЦ ОТВЕТ!!!!
 }
