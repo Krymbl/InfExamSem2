@@ -5,15 +5,8 @@ public class Task8Runnable {
     public static void main(String[] args) {
 
         /// ОТВЕТ!!!!
-        Runnable runnable = new Runnable() {
+        new Thread(() -> System.out.println("Работаем")).start();
 
-            @Override
-            public void run() {
-                System.out.println("Работаем");
-            }
-        };
-
-        runnable.run();
         /// КОНЕЦ ОТВЕТ!!!!
     }
 }

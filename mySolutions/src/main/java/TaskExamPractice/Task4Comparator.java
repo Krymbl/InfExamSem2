@@ -22,7 +22,7 @@ public class Task4Comparator {
         //Comparator в виде лямбды выражения
         Comparator<Integer> comparator = ((o1, o2) -> {return o1-o2;});
 
-        //Comparator в виде лямбды выражения. ("Анонимная" лямбда функция)
+        //Comparator в виде лямбды выражения. (Анонимная лямбда функция)
         Collections.sort(list, (o1,o2) -> {return o1-o2;});
         System.out.println(list);
 
