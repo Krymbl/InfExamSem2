@@ -1,4 +1,4 @@
-package TaskExamPractice;
+package TaskExamTheory;
 
 public class Task11Jeneric {
     public static void main(String[] args) {

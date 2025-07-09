@@ -1,4 +1,4 @@
-package TaskExamPractice;
+package TaskExamTheory;
 
 import java.util.Iterator;
 
