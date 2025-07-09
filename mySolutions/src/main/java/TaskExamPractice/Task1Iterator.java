@@ -1,6 +1,7 @@
 package TaskExamPractice;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 //ToDo Реализовать итератор
 
@@ -92,6 +93,9 @@ public class Task1Iterator {
             }
             //Возвращаем следующий элемент
             public T next() {
+                if (index == array.length) {
+                    throw new NoSuchElementException();
+                }
                 return array[index++];
             }
         }

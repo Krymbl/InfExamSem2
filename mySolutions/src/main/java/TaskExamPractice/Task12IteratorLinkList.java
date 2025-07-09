@@ -1,6 +1,7 @@
 package TaskExamPractice;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 // TODO  Предложите, как бы мог быть реализован итератор
 //  по односвязному линейному списку,
@@ -53,6 +54,9 @@ public class Task12IteratorLinkList {
 
             @Override
             public Node next() {
+                if (currentNode==null) {
+                    throw new NoSuchElementException();
+                }
                 Node result = currentNode;
                 currentNode = currentNode.next;
                 return result;
