@@ -3,7 +3,8 @@ package TaskExamPractice;
 
 //Адаптер - паттерн проектирования, который обеспечивает совместную
 //работу классов с несовместимыми интерфейсами, которая без него была бы невозможно
-//ToDo Реализовать адаптер
+
+// ToDo Реализовать адаптер
 public class Task3Adapter {
     public static void main(String[] args) {
         Lamp lamp = new Lamp();
