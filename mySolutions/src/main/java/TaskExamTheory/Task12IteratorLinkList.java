@@ -1,6 +1,7 @@
-package TaskExamPractice;
+package TaskExamTheory;
 
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 // TODO  Предложите, как бы мог быть реализован итератор
@@ -18,9 +19,9 @@ public class Task12IteratorLinkList {
         node3.next = node4;
         node4.next = node5;
 
-        LinkIt link = new LinkIt(node1);
-        for (Node node : link) {
-            System.out.println(node.value);
+        LinkIt<Integer> link = new LinkIt(node1);
+        for (Integer x : link) {
+            System.out.println(x);
         }
 
 
@@ -35,29 +36,34 @@ public class Task12IteratorLinkList {
         }
     }
     ///ОТВЕТ!!!!!!!!!!!!!!!
-    public static class LinkIt implements Iterable<Node> {
-        Node currentNode;
+    public static class LinkIt<T> implements Iterable<T> {
+        Node<T> head;
 
-        public LinkIt(Node node) {
-            this.currentNode = node;
+        public LinkIt(Node<T> node) {
+            this.head = node;
         }
         @Override
-        public Iterator<Node> iterator() {
-            return new IteratorLinkdList();
+        public Iterator<T> iterator() {
+            return new IteratorLinkdList(head);
         }
 
-        public class IteratorLinkdList<T> implements Iterator<Node> {
+        public class IteratorLinkdList implements Iterator<T> {
+            Node currentNode;
+
+            public IteratorLinkdList(Node<T> head) {
+                this.currentNode = head;
+            }
             @Override
             public boolean hasNext() {
                 return currentNode!=null;
             }
 
             @Override
-            public Node next() {
+            public T next() {
                 if (currentNode==null) {
                     throw new NoSuchElementException();
                 }
-                Node result = currentNode;
+                T result = (T) currentNode.value;
                 currentNode = currentNode.next;
                 return result;
             }

@@ -1,4 +1,4 @@
-package TaskExamPractice;
+package TaskExamTheory;
 
 
 //Адаптер - паттерн проектирования, который обеспечивает совместную

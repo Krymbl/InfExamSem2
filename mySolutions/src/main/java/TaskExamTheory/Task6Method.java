@@ -1,6 +1,5 @@
-package TaskExamPractice;
+package TaskExamTheory;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 //TODO Напишите метод, который получает класс C

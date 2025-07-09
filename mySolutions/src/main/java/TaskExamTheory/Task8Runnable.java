@@ -1,4 +1,4 @@
-package TaskExamPractice;
+package TaskExamTheory;
 
 //TODO запустить поток runnable, используя лямбда-выражения
 public class Task8Runnable {
