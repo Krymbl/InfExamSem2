@@ -1,11 +1,11 @@
 Первый вариант практика
 Файлы, в которых данные разбиты | и каждая строка это новый объект:
 1. students.txt
-id|name|age|groupName
+studentid|name|age|groupName
 Пример: 1|Тарас|19|11-777
 
 2. courses.txt
-id|name|кол-во часов|еще что-то мб|
+studentid|name|кол-во часов|еще что-то мб|
 Пример: |1|Дискра|108
 
 3. grades.txt

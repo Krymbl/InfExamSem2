@@ -116,11 +116,19 @@ public class TaskExam {
 
             for(String group : groupSet) {
 
-                List<> listOfStudents = students.stream()
+                List<String> listOfStudents = students.stream()
                         .filter(o -> o.get(3).equals(group))
-                        .map(o -> o.get)
+                        .map(o -> o.get(0))
                                 .toList();
-                System.out.println(listOfStudents);
+                float countOfGroupStudents = listOfStudents.size();
+                for(String currentStudent : listOfStudents) {
+                    List<List<String>> greadesOfStudent = grades.stream()
+                            .filter(o -> o.get(0).equals(currentStudent))
+                            .toList();
+                    System.out.println(currentStudent + greadesOfStudent);
+                    for (List<String> )
+
+                }
 
             }
 
