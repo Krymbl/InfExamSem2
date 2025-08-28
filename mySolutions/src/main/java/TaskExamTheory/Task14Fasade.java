@@ -26,6 +26,7 @@ public class Task14Fasade {
                     break;
                 case "Image":
                     image.ImageAction();
+                    break;
             }
         }
 

@@ -4,9 +4,13 @@ package TaskExamTheory;
 ///  создания нужных нам объектов под определенные условия
 // ToDo Реализовать фабричный метод
 public class Task13FactoryMethod {
+    public static void main(String[] args) {
+        Coffee americano = createCoffee(TypeCoffe.LATTE);
+        americano.makeCoffee();
+    }
 
     /// ОТВЕТ!!!!!
-    public Coffee CreateCoffee(TypeCoffe typeCoffe) {
+    public static Coffee createCoffee(TypeCoffe typeCoffe) {
         Coffee coffee = null;
 
         switch (typeCoffe) {
@@ -30,7 +34,7 @@ public class Task13FactoryMethod {
 
     }
 
-    public class Americano implements Coffee {
+    public static class Americano implements Coffee {
 
         @Override
         public void makeCoffee() {
@@ -38,7 +42,7 @@ public class Task13FactoryMethod {
         }
     }
 
-    public class Latte implements Coffee {
+    public static class Latte implements Coffee {
 
         @Override
         public void makeCoffee() {
@@ -46,7 +50,7 @@ public class Task13FactoryMethod {
         }
     }
 
-    public class Espresso implements Coffee {
+    public static class Espresso implements Coffee {
 
         @Override
         public void makeCoffee() {

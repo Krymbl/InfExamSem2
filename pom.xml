@@ -11,6 +11,7 @@
     <modules>
         <module>mySolutions</module>
         <module>lessonRIGHTnow</module>
+        <module>lessonsDOPKA</module>
     </modules>
 
     <properties>

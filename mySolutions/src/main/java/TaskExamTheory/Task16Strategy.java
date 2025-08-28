@@ -8,7 +8,7 @@ public class Task16Strategy {
 
 
     interface ArmStrategy {
-        public void attack();
+        void attack();
     }
 
     public class SwordStrategy implements ArmStrategy {

@@ -1,0 +1,6 @@
+Bogdan, 92, 11-403
+Elvina, 94, 11-403
+Katya, 91, 11-401
+Kamil, 90, 11-403
+Darya, 99, 11-407
+Vladimir, 90, 11-407

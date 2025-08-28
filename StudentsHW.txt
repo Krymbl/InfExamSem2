@@ -1,0 +1,13 @@
+Danil, 60, 11-403
+Kanan, 79, 11-403
+Bogdan, 92, 11-403
+Azaliya, 87, 11-403
+Dalilya, 82, 11-403
+Elvina, 94, 11-403
+Petr, 56, 11-407
+Vlad, 61, 11-407
+Katya, 91, 11-401
+Kamil, 90, 11-403
+Vladimir, 88, 11-408
+Darya, 99, 11-407
+Vladimir, 90, 11-407
